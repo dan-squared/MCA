@@ -1,20 +1,65 @@
 "use client";
 
+import { useLayoutEffect, useRef } from "react";
 import { ArrowRight } from "@phosphor-icons/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export function Footer() {
+  const root = useRef<HTMLElement>(null);
+
+  useLayoutEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const ctx = gsap.context(() => {
+      // Parallax: headline drifts up slower than the scroll, content follows
+      gsap.fromTo(
+        ".footer-title",
+        { y: 90 },
+        {
+          y: 0,
+          ease: "none",
+          scrollTrigger: {
+            trigger: root.current,
+            start: "top bottom",
+            end: "bottom bottom",
+            scrub: true,
+          },
+        }
+      );
+      gsap.fromTo(
+        ".footer-rise",
+        { y: 48, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          ease: "none",
+          stagger: 0.08,
+          scrollTrigger: {
+            trigger: root.current,
+            start: "top 75%",
+            end: "bottom bottom",
+            scrub: true,
+          },
+        }
+      );
+    }, root);
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <footer id="enquire" className="bg-moss text-cream">
+    <footer ref={root} id="enquire" className="bg-moss text-cream overflow-hidden">
       <div className="px-4 md:px-8 pt-16 md:pt-24 pb-8">
         <p className="label !text-cream/70">Enquire — Round 124 now enrolling</p>
-        <h2 className="font-display text-[12vw] md:text-[7vw] leading-[0.95] mt-6 uppercase">
+        <h2 className="footer-title font-display text-[12vw] md:text-[7vw] leading-[0.95] mt-6 uppercase">
           Start your
           <br />
           flock today
         </h2>
         <div className="grid md:grid-cols-12 gap-10 mt-10 md:mt-16">
           <form
-            className="md:col-span-5 flex flex-col gap-3"
+            className="footer-rise md:col-span-5 flex flex-col gap-3"
             onSubmit={(e) => e.preventDefault()}
           >
             <input
@@ -54,7 +99,7 @@ export function Footer() {
             <p className="mt-4">hello@chickenaddis.et</p>
             <p>+251 91 000 0000</p>
           </div>
-          <div className="md:col-span-3 md:col-start-10 text-[14px] leading-loose">
+          <div className="footer-rise md:col-span-3 md:col-start-10 text-[14px] leading-loose">
             <p className="label !text-cream/60 mb-3">Follow the flock</p>
             {["TikTok", "YouTube", "Telegram", "Instagram"].map(
               (s) => (

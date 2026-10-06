@@ -62,6 +62,7 @@ export function Hero() {
           muted
           loop
           playsInline
+          preload="auto"
           poster="/layers-grass.jpg"
         />
         <div className="absolute inset-0 bg-black/45" />

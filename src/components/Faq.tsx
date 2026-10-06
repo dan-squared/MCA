@@ -65,7 +65,7 @@ export function Faq() {
                     }}
                   >
                     <div className="overflow-hidden">
-                      <p className="body-copy pb-6 max-w-[520px] opacity-85">
+                      <p className="body-copy pb-8 max-w-[520px] opacity-85">
                         {item.a}
                       </p>
                     </div>

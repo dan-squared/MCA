@@ -12,7 +12,6 @@ const BIG: Array<[string, string]> = [
   ["Community", "#community"],
 ];
 const SMALL: Array<[string, string]> = [
-  ["Gallery", "#gallery"],
   ["FAQ", "#faq"],
   ["Plan Your Visit", "#enquire"],
 ];

@@ -96,7 +96,7 @@ export function StickyPractices() {
                       }}
                     >
                       <div className="overflow-hidden">
-                        <div className="pb-8 md:pb-10 md:pl-14 max-w-[620px]">
+                        <div className="pb-8 md:pl-14 max-w-[620px]">
                           <p className="editorial-large text-[19px] md:text-[22px] leading-snug opacity-90">
                             {it.title}
                           </p>

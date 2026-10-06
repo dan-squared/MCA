@@ -157,35 +157,30 @@ export function Sections() {
   return (
     <div ref={root}>
       {/* ---------- INTRO ---------- */}
-      <section id="about" className="px-4 md:px-8 pt-10 md:pt-16 pb-20 md:pb-28">
-        <div className="grid md:grid-cols-12 gap-8">
-          <p className="reveal label md:col-span-4">Golden Abundance</p>
-          <p className="reveal editorial-large text-[26px] md:text-[32px] md:col-span-7 md:col-start-6">
-            Two training farms and three service lines on the Addis to
-            Bishoftu poultry belt. 123 rounds of classes so far.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-12 gap-8 mt-12 md:mt-20 items-start">
-          <p className="reveal body-copy text-[16px] leading-relaxed max-w-[300px] md:col-span-3">
+      <section id="about" className="px-4 md:px-8 pt-10 md:pt-16">
+        <p className="reveal label">Golden Abundance</p>
+        <p className="reveal editorial-large text-olive text-[32px] md:text-[56px] leading-[1.04] mt-6 max-w-[1200px]">
+          Two training farms and three service lines on the Addis to Bishoftu
+          poultry belt. 123 rounds of classes so far.
+        </p>
+        <div className="grid md:grid-cols-12 gap-6 md:gap-8 mt-12 md:mt-16 items-start">
+          <p className="reveal body-copy max-w-[300px] opacity-90 md:col-span-3">
             Farmers and flocks do well together. Our graduates sell eggs
             across Addis Ababa and Bishoftu.
           </p>
-          <div className="reveal-img img-frame relative aspect-[4/5] md:aspect-[4/5] md:col-span-6 md:col-start-7">
+          <div className="reveal-img img-frame relative aspect-[3/4] md:col-span-5">
             <Image
               src="/layers-grass.jpg"
               alt="Layers grazing on green pasture"
               fill
-              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
+              sizes="(max-width: 768px) 100vw, 40vw"
               className="object-cover scale-[1.12]"
             />
           </div>
-        </div>
-
-        <div className="grid md:grid-cols-12 gap-8 mt-8 md:-mt-24">
-          <div className="reveal-img img-frame relative aspect-[4/5] md:col-span-4">
+          <div className="reveal-img img-frame relative aspect-[3/4] md:col-span-4">
             <Image
-              src="/cosmos_1316326017.webp"
+              src="/cosmos_1316326017.jpg"
               alt="Close portrait of a Habesha rooster"
               fill
               sizes="(max-width: 768px) 100vw, 35vw"
@@ -207,7 +202,7 @@ export function Sections() {
 
         <div className="mt-12 md:mt-16">
           <p className="reveal label">Courses</p>
-          <p className="reveal body-copy mt-7 md:mt-8 text-[16px] leading-relaxed max-w-[400px]">
+          <p className="reveal body-copy mt-6 text-[16px] leading-relaxed max-w-[400px]">
             Beginners and working farmers train in the same yard. You build
             shelter, mix feed and handle chicks.
           </p>
@@ -234,7 +229,7 @@ export function Sections() {
       {/* ---------- SERVICES ---------- */}
       <section id="services" className="px-4 md:px-8 pt-20 md:pt-28">
         <p className="reveal label">Farm Services</p>
-        <p className="reveal body-copy mt-7 md:mt-8 text-[16px] leading-relaxed max-w-[400px]">
+        <p className="reveal body-copy mt-6 text-[16px] leading-relaxed max-w-[400px]">
           We sell eggs daily, build modern cages and equipment, and help with
           pricing and startup loans.
         </p>
@@ -254,28 +249,6 @@ export function Sections() {
             badge="Loans + Pricing"
             caption="Poultry Finance — Costing, Pricing & Startup Loans"
           />
-        </div>
-      </section>
-
-      {/* ---------- GALLERY STRIP ---------- */}
-      <section id="gallery" className="px-4 md:px-8 pt-20 md:pt-28">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-          {[
-            "/cosmos_1055775396.webp",
-            "/cosmos_1316326017.webp",
-            "/chick-flower.jpg",
-            "/hoop-house.jpg",
-          ].map((s) => (
-            <div key={s} className="reveal-img img-frame relative aspect-[3/4]">
-              <Image
-                src={s}
-                alt="Chicken Addis farm life"
-                fill
-                sizes="(max-width: 768px) 50vw, 25vw"
-                className="object-cover scale-[1.12]"
-              />
-            </div>
-          ))}
         </div>
         <div className="reveal flex flex-wrap gap-3 mt-10 items-center justify-end">
           <a href="#enquire" className="btn-explore">
