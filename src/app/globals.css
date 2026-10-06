@@ -1,0 +1,192 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #ede8dc;
+  --color-cream-deep: #e4dccb;
+  --color-ink: #37141c;
+  --color-olive: #7c2233;
+  --color-moss: #2a0e14;
+  --color-pine: #5c1622;
+  --color-gold: #c2a500;
+  --color-paper: #f4f0e7;
+
+  --font-display: "PP Fragment Serif", Georgia, serif;
+  --font-body: "PP Fragment Sans", Helvetica, Arial, sans-serif;
+  --font-text: "PP Fragment Text", Helvetica, Arial, sans-serif;
+}
+
+@font-face {
+  font-family: "PP Fragment Serif";
+  src: url("/fonts/PPFragment-SerifLight.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Fragment Serif";
+  src: url("/fonts/PPFragment-SerifRegular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Fragment Sans";
+  src: url("/fonts/PPFragment-SansRegular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PP Fragment Text";
+  src: url("/fonts/PPFragment-TextRegular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-ink);
+  color: var(--color-cream);
+}
+
+.font-display {
+  font-family: var(--font-display);
+  font-weight: 300;
+}
+
+.label {
+  font-family: var(--font-body);
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+.body-copy {
+  font-family: var(--font-text);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 0.94;
+  letter-spacing: 0.01em;
+}
+
+.editorial-large {
+  font-family: var(--font-display);
+  font-weight: 300;
+  line-height: 1.12;
+  letter-spacing: -0.005em;
+}
+
+/* green-gold geometric divider from reference */
+.pattern-divider {
+  height: 10px;
+  background:
+    repeating-linear-gradient(
+      to right,
+      var(--color-gold) 0 14px,
+      transparent 14px 22px,
+      var(--color-pine) 22px 30px,
+      transparent 30px 44px
+    );
+  background-color: var(--color-pine);
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.card-img {
+  transition: transform 1.2s cubic-bezier(0.19, 1, 0.22, 1), filter 0.6s ease;
+}
+.group:hover .card-img {
+  transform: scale(1.045);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  border-radius: 4px;
+  padding: 0.45rem 0.7rem;
+  font-size: 13px;
+  line-height: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+  transition: transform 160ms ease-out, opacity 0.25s ease;
+}
+@media (hover: hover) {
+  .pill:active,
+  .btn-explore:active {
+    transform: scale(0.97);
+  }
+}
+
+.btn-explore {
+  display: inline-flex;
+  align-items: stretch;
+  border-radius: 4px;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: transform 160ms ease-out;
+}
+.btn-explore:hover {
+  transform: translateY(-1px);
+}
+.btn-explore span {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  padding: 0.65rem 0.8rem;
+}
+.btn-explore .arrow {
+  background: var(--color-paper);
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  padding: 0 0.7rem;
+}
+
+.menu-big-link {
+  font-family: var(--font-display);
+  font-weight: 300;
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+  transition: opacity 0.25s ease, transform 0.45s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.menu-big-link:hover {
+  opacity: 0.55;
+}
+
+.row-link {
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+.row-link:hover {
+  background: rgba(43, 51, 25, 0.06);
+}
+
+.img-frame {
+  overflow: hidden;
+  background: #d8d0bd;
+}
