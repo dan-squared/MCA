@@ -131,8 +131,11 @@ export function Footer() {
             )}
           </div>
         </div>
-        <div className="border-t border-cream/20 mt-14 pt-5 label !text-cream/60 text-center">
-          <span>© 2026 Chicken Addis Poultry Co. All rights reserved.</span>
+        <div className="mt-14 flex items-baseline justify-between gap-4 text-[12px] tracking-wide text-cream/50">
+          <span>© 2026 Chicken Addis</span>
+          <a href="#top" className="transition-opacity hover:opacity-60">
+            Back to top ↑
+          </a>
         </div>
       </div>
       </footer>
