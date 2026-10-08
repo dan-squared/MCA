@@ -119,7 +119,6 @@ export function Footer() {
             <p>Open yard daily 8:00 — 17:00</p>
             <p className="mt-4">hello@chickenaddis.et</p>
             <p>+251 91 000 0000</p>
-            <p className="mt-6 text-[12px] text-cream/40">© 2026 Chicken Addis</p>
           </div>
           <div className="footer-rise md:col-span-3 md:col-start-10 text-[14px] leading-loose">
             <p className="label !text-cream/60 mb-3">Follow the flock</p>
