@@ -1,14 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cream: #ede8dc;
-  --color-cream-deep: #e4dccb;
-  --color-ink: #37141c;
-  --color-olive: #7c2233;
-  --color-moss: #2a0e14;
-  --color-pine: #5c1622;
-  --color-gold: #c2a500;
-  --color-paper: #f4f0e7;
+  --color-cream: #ece1cc;
+  --color-cream-deep: #ded0b8;
+  --color-ink: #4a1512;
+  --color-olive: #791f1a;
+  --color-moss: #4a1512;
+  --color-pine: #4a1512;
+  --color-gold: #a68b5b;
+  --color-paper: #f3ead6;
+  --color-brand: #44bae6;
+  --color-heritage: #39629c;
 
   --font-display: "PP Fragment Serif", Georgia, serif;
   --font-body: "PP Fragment Sans", Helvetica, Arial, sans-serif;
@@ -61,8 +63,21 @@ body {
 }
 
 ::selection {
-  background: var(--color-ink);
-  color: var(--color-cream);
+  background: var(--color-brand);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 3px;
+}
+
+/* Footer sits on dark oxblood — cream ring instead of ink, thin and quiet */
+#enquire input:focus-visible,
+#enquire select:focus-visible,
+#enquire button:focus-visible {
+  outline: 1px solid rgba(236, 225, 204, 0.55);
+  outline-offset: 2px;
 }
 
 .font-display {
@@ -99,13 +114,13 @@ body {
   letter-spacing: -0.005em;
 }
 
-/* green-gold geometric divider from reference */
+/* brand thread — thin cyan stripe ties the hero divider to Chicken Addis blue */
 .pattern-divider {
   height: 10px;
   background:
     repeating-linear-gradient(
       to right,
-      var(--color-gold) 0 14px,
+      var(--color-brand) 0 14px,
       transparent 14px 22px,
       var(--color-pine) 22px 30px,
       transparent 30px 44px
@@ -161,7 +176,8 @@ body {
   padding: 0.65rem 0.8rem;
 }
 .btn-explore .arrow {
-  background: var(--color-paper);
+  background: var(--color-brand);
+  color: var(--color-ink);
   border-left: 1px solid rgba(0, 0, 0, 0.12);
   display: flex;
   align-items: center;
@@ -183,10 +199,10 @@ body {
   transition: background 0.3s ease, border-color 0.3s ease;
 }
 .row-link:hover {
-  background: rgba(43, 51, 25, 0.06);
+  background: rgba(121, 31, 26, 0.06);
 }
 
 .img-frame {
   overflow: hidden;
-  background: #d8d0bd;
+  background: #d9c9a8;
 }

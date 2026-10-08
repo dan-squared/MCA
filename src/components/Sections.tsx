@@ -158,7 +158,7 @@ export function Sections() {
     <div ref={root}>
       {/* ---------- INTRO ---------- */}
       <section id="about" className="px-4 md:px-8 pt-10 md:pt-16">
-        <p className="reveal label">Golden Abundance</p>
+        <h2 className="reveal label font-body font-normal">Golden Abundance</h2>
         <p className="reveal editorial-large text-olive text-[32px] md:text-[56px] leading-[1.04] mt-6 max-w-[1200px]">
           Two training farms and three service lines on the Addis to Bishoftu
           poultry belt. 123 rounds of classes so far.
@@ -193,7 +193,7 @@ export function Sections() {
       {/* ---------- TRAINING ---------- */}
       <section id="training" className="px-4 md:px-8 pt-20 md:pt-28">
         <div className="grid md:grid-cols-12 gap-8">
-          <p className="reveal label md:col-span-4">Training & Education</p>
+          <h2 className="reveal label font-body font-normal md:col-span-4">Training & Education</h2>
           <p className="reveal editorial-large text-olive text-[26px] md:text-[40px] leading-[1.1] md:col-span-7 md:col-start-6">
             Hands-on training in shelter building, feed formulas and flock
             health — from backyard coops to commercial layers.
@@ -201,7 +201,7 @@ export function Sections() {
         </div>
 
         <div className="mt-12 md:mt-16">
-          <p className="reveal label">Courses</p>
+          <h3 className="reveal label font-body font-normal">Courses</h3>
           <p className="reveal body-copy mt-6 text-[16px] leading-relaxed max-w-[400px]">
             Beginners and working farmers train in the same yard. You build
             shelter, mix feed and handle chicks.
@@ -228,7 +228,7 @@ export function Sections() {
 
       {/* ---------- SERVICES ---------- */}
       <section id="services" className="px-4 md:px-8 pt-20 md:pt-28">
-        <p className="reveal label">Farm Services</p>
+        <h2 className="reveal label font-body font-normal">Farm Services</h2>
         <p className="reveal body-copy mt-6 text-[16px] leading-relaxed max-w-[400px]">
           We sell eggs daily, build modern cages and equipment, and help with
           pricing and startup loans.
@@ -266,7 +266,7 @@ export function Sections() {
       {/* ---------- STORY ---------- */}
       <section id="community" className="px-4 md:px-8 pt-20 md:pt-28">
         <div className="grid md:grid-cols-12 gap-8">
-          <p className="reveal label md:col-span-4">Our Story</p>
+          <h2 className="reveal label font-body font-normal md:col-span-4">Our Story</h2>
           <div className="md:col-span-7 md:col-start-6">
             <p className="reveal editorial-large text-[24px] md:text-[30px]">
               With roots in Addis markets and Bishoftu farms, our story is
@@ -304,7 +304,7 @@ export function Sections() {
       <section className="px-0 md:px-8 pt-20 md:pt-28">
         <div className="reveal-img img-frame relative aspect-[4/3] md:aspect-[21/9]">
           <Image
-            src="/cosmos_1968213960.webp"
+            src="/cosmos_1968213960.jpg"
             alt="Chickens feeding in the farm run"
             fill
             sizes="100vw"

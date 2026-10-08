@@ -1,11 +1,22 @@
 "use client";
 
-import { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
+import Image from "next/image";
 import { ArrowRight } from "@phosphor-icons/react";
 import gsap from "gsap";
 
 export function Hero() {
   const root = useRef<HTMLElement>(null);
+  const [lite, setLite] = useState(false);
+
+  // Data-saver or small screens get the poster frame instead of the
+  // 2.5MB autoplaying video — same look, fraction of the bytes.
+  useLayoutEffect(() => {
+    const conn = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
+    if (conn?.saveData || window.matchMedia("(max-width: 768px)").matches) {
+      setLite(true);
+    }
+  }, []);
 
   useLayoutEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -55,16 +66,29 @@ export function Hero() {
   return (
     <section ref={root} id="top" className="relative h-[100svh] min-h-[620px] overflow-hidden bg-moss text-paper">
       <div className="absolute inset-0">
-        <video
-          className="hero-video h-full w-full object-cover"
-          src="/hero.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          poster="/layers-grass.jpg"
-        />
+        {lite ? (
+          <Image
+            src="/layers-grass.jpg"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="hero-video h-full w-full object-cover"
+          />
+        ) : (
+          <video
+            className="hero-video h-full w-full object-cover"
+            src="/hero.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster="/layers-grass.jpg"
+            disablePictureInPicture
+            aria-hidden="true"
+          />
+        )}
         <div className="absolute inset-0 bg-black/45" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-transparent to-black/30" />
       </div>

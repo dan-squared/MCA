@@ -35,8 +35,9 @@ export function SiteHeader({ onMenu }: { onMenu: () => void }) {
       <div className="flex items-start justify-between px-4 md:px-8 pt-4 md:pt-5 pb-4">
         <a
           href="#enquire"
-          className="label hover:opacity-60 transition-opacity pt-1"
+          className="label hover:opacity-60 transition-opacity pt-1 inline-flex items-center gap-2"
         >
+          <span className="inline-block h-[7px] w-[7px] rounded-full bg-brand" />
           Enquire
         </a>
         <a href="#top" className="text-center leading-none select-none">

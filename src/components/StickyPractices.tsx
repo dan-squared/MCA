@@ -43,7 +43,7 @@ export function StickyPractices() {
   return (
     <section id="experiences" className="px-4 md:px-8 pt-20 md:pt-28">
       <div className="grid md:grid-cols-12 gap-6 md:gap-8">
-        <p className="reveal label md:col-span-4">Our Practices</p>
+        <h2 className="reveal label font-body font-normal md:col-span-4">Our Practices</h2>
         <div className="md:col-span-7 md:col-start-6">
           <p className="reveal editorial-large text-[24px] md:text-[30px] max-w-[720px]">
             What we do — five hands-on practices covering training, finance,
@@ -77,7 +77,7 @@ export function StickyPractices() {
                       <span
                         className={`shrink-0 inline-flex h-8 w-8 items-center justify-center rounded-full border transition-all duration-300 ${
                           isOpen
-                            ? "bg-ink text-cream border-ink"
+                            ? "bg-brand text-ink border-brand"
                             : "border-ink/20 group-hover:bg-ink group-hover:text-cream group-hover:border-ink"
                         }`}
                       >
