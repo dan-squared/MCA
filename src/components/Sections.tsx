@@ -161,7 +161,7 @@ export function Sections() {
         <h2 className="reveal label font-body font-normal">Golden Abundance</h2>
         <p className="reveal editorial-large text-olive text-[32px] md:text-[56px] leading-[1.04] mt-6 max-w-[1200px]">
           Two training farms and three service lines on the Addis to Bishoftu
-          poultry belt. 123 rounds of classes so far.
+          poultry belt. 400 cohorts taught so far.
         </p>
         <div className="grid md:grid-cols-12 gap-6 md:gap-8 mt-12 md:mt-16 items-start">
           <p className="reveal body-copy max-w-[300px] opacity-90 md:col-span-3">
@@ -209,7 +209,7 @@ export function Sections() {
           <div className="grid md:grid-cols-3 gap-10 md:gap-6 mt-8 stagger-group">
             <Card
               src="/coop-run.jpg"
-              badge="Round 123 · Live"
+              badge="Cohort 400 · Live"
               caption="Beginner's Foundation — Shelter, Feed & Hygiene"
             />
             <Card
@@ -219,7 +219,7 @@ export function Sections() {
             />
             <Card
               src="/chick-flower.jpg"
-              badge="Round 124 · Coming Soon"
+              badge="Cohort 401 · Coming Soon"
               caption="Breeders' Camp — Cross-Breeds & Hatchery Craft"
             />
           </div>
@@ -279,7 +279,7 @@ export function Sections() {
             </p>
             <div className="reveal grid grid-cols-3 gap-6 mt-10 border-t border-ink/15 pt-6">
               {[
-                ["123", "Rounds taught", "123", "0", ""],
+                ["400", "Cohorts taught", "400", "0", ""],
                 ["2.4k", "Farmers graduated", "2.4", "1", "k"],
                 ["18k", "Eggs graded daily", "18", "0", "k"],
               ].map(([label, sub, target, decimals, suffix]) => (
@@ -324,7 +324,7 @@ export function Sections() {
           ))}&rdquo;
         </blockquote>
         <p className="reveal label mt-8">
-          Meseret Haile, <span className="opacity-60">Commercial Farmer — Round 118</span>
+          Meseret Haile, <span className="opacity-60">Commercial Farmer — Cohort 395</span>
         </p>
       </section>
 

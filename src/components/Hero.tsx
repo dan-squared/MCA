@@ -96,10 +96,10 @@ export function Hero() {
       <div className="hero-inner relative z-10 h-full flex flex-col items-center justify-center px-4 text-center">
         <h1 className="hero-title text-[15.5vw] md:text-[9.5vw] leading-[0.94]">
           <span className="block overflow-hidden">
-            <span className="hero-line block">Raise Birds</span>
+            <span className="hero-line block">Growing</span>
           </span>
           <span className="block overflow-hidden">
-            <span className="hero-line block">Build Income</span>
+            <span className="hero-line block">Together</span>
           </span>
         </h1>
 

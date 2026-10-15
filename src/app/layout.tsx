@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s · Chicken Addis",
   },
   description:
-    "Chicken Addis is Ethiopia's hands-on poultry school on the Addis–Bishoftu belt: 123 rounds of training in shelter, feed and flock health, plus finance, egg supply and modern cages. Training in Amharic.",
+    "Chicken Addis is Ethiopia's hands-on poultry school on the Addis–Bishoftu belt: 400 cohorts of training in shelter, feed and flock health, plus finance, egg supply and modern cages. Training in Amharic.",
   keywords: [
     "poultry training Ethiopia",
     "chicken farming Addis Ababa",
@@ -29,17 +29,17 @@ export const metadata: Metadata = {
     type: "website",
     url: SITE_URL,
     siteName: "Chicken Addis",
-    title: "Chicken Addis — Raise Birds, Build Income",
+    title: "Chicken Addis — Growing Together",
     description:
-      "Hands-on poultry school: 123 rounds taught, 2.4k farmers graduated, 18k eggs graded daily. Training in Amharic, Addis Ababa to Bishoftu.",
+      "Hands-on poultry school: 400 cohorts taught, 2.4k farmers graduated, 18k eggs graded daily. Training in Amharic, Addis Ababa to Bishoftu.",
     images: [{ url: "/layers-grass.jpg", width: 1920, height: 1280, alt: "Layers grazing on green pasture" }],
     locale: "en_ET",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Chicken Addis — Raise Birds, Build Income",
+    title: "Chicken Addis — Growing Together",
     description:
-      "Ethiopia's hands-on poultry school: training, finance, eggs, cages and community. Round 124 now enrolling.",
+      "Ethiopia's hands-on poultry school: training, finance, eggs, cages and community. Cohort 401 now enrolling.",
     images: ["/layers-grass.jpg"],
   },
   robots: { index: true, follow: true },
@@ -59,13 +59,14 @@ const JSON_LD = [
     name: "Chicken Addis Poultry Co.",
     url: SITE_URL,
     email: "hello@chickenaddis.et",
+    telephone: "+251926775050",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Bishoftu Road",
       addressLocality: "Addis Ababa",
       addressCountry: "ET",
     },
-    sameAs: ["https://www.tiktok.com/", "https://www.youtube.com/", "https://www.instagram.com/"],
+    sameAs: ["https://www.facebook.com/MyChickenAddis/", "https://www.tiktok.com/@mychickenaddis", "https://www.instagram.com/mychickenaddis_/", "https://t.me/Mychickenaddis"],
   },
   {
     "@context": "https://schema.org",
@@ -106,7 +107,7 @@ const JSON_LD = [
         name: "How many farmers can each cohort accommodate at full occupancy?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "24 farmers per round, kept small on purpose. Rounds repeat monthly, now enrolling Round 124.",
+          text: "24 farmers per cohort, kept small on purpose. Cohorts repeat monthly, now enrolling Cohort 401.",
         },
       },
     ],

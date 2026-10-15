@@ -64,7 +64,7 @@ export function Footer() {
       <div aria-hidden className="pointer-events-none relative z-10" style={{ height: spacer }} />
       <footer ref={root} id="enquire" className="fixed inset-x-0 bottom-0 z-0 bg-moss text-cream overflow-hidden">
       <div className="px-4 md:px-8 pt-16 md:pt-24 pb-8">
-        <p className="label !text-cream/70">Enquire — Round 124 now enrolling</p>
+        <p className="label !text-cream/70">Enquire — Cohort 401 now enrolling</p>
         <h2 className="footer-title font-display text-[12vw] md:text-[7vw] leading-[0.95] mt-6 uppercase">
           Start your
           <br />
@@ -118,13 +118,17 @@ export function Footer() {
             <p>Bishoftu Road, Addis Ababa</p>
             <p>Open yard daily 8:00 — 17:00</p>
             <p className="mt-4">hello@chickenaddis.et</p>
-            <p>+251 91 000 0000</p>
+            <a href="tel:+251926775050" className="hover:opacity-60 transition-opacity">+251 92 677 5050</a>
           </div>
           <div className="footer-rise md:col-span-3 md:col-start-10 text-[14px] leading-loose">
             <p className="label !text-cream/60 mb-3">Follow the flock</p>
-            {["TikTok", "YouTube", "Telegram", "Instagram"].map(
-              (s) => (
-                <a key={s} href="#top" className="block hover:opacity-60 transition-opacity">
+            {[
+              ["Facebook", "https://www.facebook.com/MyChickenAddis/"],
+              ["TikTok", "https://www.tiktok.com/@mychickenaddis"],
+              ["Instagram", "https://www.instagram.com/mychickenaddis_/"],
+              ["Telegram", "https://t.me/Mychickenaddis"],
+            ].map(([s, href]) => (
+                <a key={s} href={href} target="_blank" rel="noopener noreferrer" className="block hover:opacity-60 transition-opacity">
                   {s} ↗
                 </a>
               )

@@ -50,7 +50,7 @@ export function StickyPractices() {
             eggs, equipment and community.
           </p>
           <p className="reveal body-copy mt-6 max-w-[520px] opacity-90">
-            One round covers all five. You learn by doing.
+            One cohort covers all five. You learn by doing.
           </p>
         </div>
       </div>

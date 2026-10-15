@@ -18,7 +18,7 @@ const QA = [
   },
   {
     q: "How many farmers can each cohort accommodate at full occupancy?",
-    a: "24 farmers per round, kept small on purpose. Rounds repeat monthly, now enrolling Round 124.",
+    a: "24 farmers per cohort, kept small on purpose. Cohorts repeat monthly, now enrolling Cohort 401.",
   },
 ];
 

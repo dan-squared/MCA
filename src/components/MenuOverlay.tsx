@@ -142,9 +142,9 @@ export function MenuOverlay({
         </ul>
         <div className="menu-fade mt-14 text-[13px] leading-relaxed opacity-70 max-w-xs">
           <p>Bishoftu Road, Addis Ababa, Ethiopia</p>
-          <p className="mt-1">Daily tips on TikTok & YouTube, in Amharic.</p>
+          <p className="mt-1">Daily tips on TikTok, Facebook & Instagram, in Amharic.</p>
           <a href="#enquire" onClick={onClose} className="mt-3 inline-flex items-center gap-2 underline decoration-brand decoration-2 underline-offset-4">
-            Enquire about Round 124
+            Enquire about Cohort 401
             <ArrowRight size={14} weight="regular" />
           </a>
         </div>

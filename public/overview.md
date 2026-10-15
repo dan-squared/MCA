@@ -4,8 +4,8 @@ Chicken Addis Poultry Co. is a hands-on poultry school on the Addis Ababa–Bish
 
 ## Key facts
 
-- 123 rounds taught; 2,400+ farmers graduated; 18,000 eggs graded daily.
-- 24 farmers per round; rounds repeat monthly; Round 124 now enrolling.
+- 400 cohorts taught; 2,400+ farmers graduated; 18,000 eggs graded daily.
+- 24 farmers per cohort; cohorts repeat monthly; Cohort 401 now enrolling.
 - Location: Bishoftu Road, Addis Ababa. Open yard daily 8:00–17:00.
 - Contact: hello@chickenaddis.et. Reply on Telegram within one working day.
 
@@ -13,7 +13,7 @@ Chicken Addis Poultry Co. is a hands-on poultry school on the Addis Ababa–Bish
 
 1. Beginner's Foundation — shelter, feed, hygiene (beginners, families).
 2. Scale-Up Mastery — layers, yields, flock health, costing (50+ birds).
-3. Breeders' Camp — cross-breeds, hatchery craft (coming soon, Round 124).
+3. Breeders' Camp — cross-breeds, hatchery craft (coming soon, Cohort 401).
 
 ## Services
 
@@ -23,7 +23,7 @@ Chicken Addis Poultry Co. is a hands-on poultry school on the Addis Ababa–Bish
 
 ## Practices
 
-Five hands-on practices per round: training, finance, eggs, equipment, community.
+Five hands-on practices per cohort: training, finance, eggs, equipment, community.
 
 ## FAQ
 

@@ -48,7 +48,7 @@ export function SiteHeader({ onMenu }: { onMenu: () => void }) {
             Addis
           </span>
           <span className="block text-[8px] md:text-[9px] tracking-[0.32em] uppercase mt-1 opacity-80">
-            Poultry Co.
+            Growing Together
           </span>
         </a>
         <button
