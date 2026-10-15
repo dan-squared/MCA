@@ -103,12 +103,12 @@ export function Footer() {
               <option className="text-black">Cages & equipment</option>
               <option className="text-black">Finance advisory</option>
             </select>
-            <button className="btn-explore mt-4 self-start" type="submit">
+            <a className="btn-explore mt-4 self-start" href="tel:+251926775050">
               <span>Request a call back</span>
               <span className="arrow">
                 <ArrowRight size={14} weight="regular" />
               </span>
-            </button>
+            </a>
             <p className="text-[12px] text-cream/60 mt-2">
               We reply on Telegram within one working day. Training in Amharic.
             </p>
