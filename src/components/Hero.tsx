@@ -101,6 +101,9 @@ export function Hero() {
           <span className="block overflow-hidden">
             <span className="hero-line block">Together</span>
           </span>
+          <span className="block overflow-hidden">
+            <span className="hero-line block">With a Stock</span>
+          </span>
         </h1>
 
         <div className="mt-8 md:mt-10 flex flex-col items-center">

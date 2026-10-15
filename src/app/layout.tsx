@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     type: "website",
     url: SITE_URL,
     siteName: "Chicken Addis",
-    title: "Chicken Addis — Growing Together",
+    title: "Chicken Addis — Growing Together With a Stock",
     description:
       "Hands-on poultry school: 400 cohorts taught, 2.4k farmers graduated, 18k eggs graded daily. Training in Amharic, Addis Ababa to Bishoftu.",
     images: [{ url: "/layers-grass.jpg", width: 1920, height: 1280, alt: "Layers grazing on green pasture" }],
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Chicken Addis — Growing Together",
+    title: "Chicken Addis — Growing Together With a Stock",
     description:
       "Ethiopia's hands-on poultry school: training, finance, eggs, cages and community. Cohort 401 now enrolling.",
     images: ["/layers-grass.jpg"],
