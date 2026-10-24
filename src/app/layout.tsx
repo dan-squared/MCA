@@ -62,7 +62,7 @@ const JSON_LD = [
     telephone: "+251926775050",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Bishoftu Road",
+      streetAddress: "Bole Road",
       addressLocality: "Addis Ababa",
       addressCountry: "ET",
     },

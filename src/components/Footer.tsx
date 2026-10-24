@@ -115,7 +115,7 @@ export function Footer() {
           </form>
           <div className="md:col-span-3 md:col-start-7 text-[14px] leading-loose">
             <p className="label !text-cream/60 mb-3">Visit</p>
-            <p>Bishoftu Road, Addis Ababa</p>
+            <p>Bole Road, Addis Ababa</p>
             <p>Open yard daily 8:00 — 17:00</p>
             <p className="mt-4">hello@chickenaddis.et</p>
             <a href="tel:+251926775050" className="hover:opacity-60 transition-opacity">+251 92 677 5050</a>

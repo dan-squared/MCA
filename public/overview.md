@@ -6,7 +6,7 @@ Chicken Addis Poultry Co. is a hands-on poultry school on the Addis Ababa–Bish
 
 - 400 cohorts taught; 2,400+ farmers graduated; 18,000 eggs graded daily.
 - 24 farmers per cohort; cohorts repeat monthly; Cohort 401 now enrolling.
-- Location: Bishoftu Road, Addis Ababa. Open yard daily 8:00–17:00.
+- Location: Bole Road, Addis Ababa. Open yard daily 8:00–17:00.
 - Contact: hello@chickenaddis.et. Reply on Telegram within one working day.
 
 ## Courses
