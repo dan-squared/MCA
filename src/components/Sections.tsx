@@ -213,9 +213,9 @@ export function Sections() {
               caption="Beginner's Foundation — Shelter, Feed & Hygiene"
             />
             <Card
-              src="/layers-close.jpg"
+              src="/layer-barn.jpg"
               badge="Hands-On · 21 Days"
-              caption="Scale-Up Mastery — Layers, Yields & Flock Health"
+              caption="Scale-Up Mastery — Layer House, Yields & Flock Health"
             />
             <Card
               src="/chick-flower.jpg"
@@ -230,19 +230,20 @@ export function Sections() {
       <section id="services" className="px-4 md:px-8 pt-20 md:pt-28">
         <h2 className="reveal label font-body font-normal">Farm Services</h2>
         <p className="reveal body-copy mt-6 text-[16px] leading-relaxed max-w-[400px]">
-          We sell eggs daily, build modern cages and equipment, and help with
-          pricing and startup loans.
+          We grade and sell eggs daily from our own layer houses, build the
+          feeders and housing that carry a flock, and help with pricing and
+          startup loans.
         </p>
         <div className="grid md:grid-cols-3 gap-10 md:gap-6 mt-8 stagger-group">
           <Card
-            src="/eggs-grading.jpg"
+            src="/grading-hall.jpg"
             badge="Daily Supply"
-            caption="Egg Production — Layers, Grading & Commercial Supply"
+            caption="Egg Production — Grading Hall, Tray Supply & Buyers"
           />
           <Card
-            src="/modern-coop.jpg"
+            src="/feeder.jpg"
             badge="Modern Systems"
-            caption="Cages & Equipment — Housing, Feeders & Infrastructure"
+            caption="Cages & Equipment — Feeders, Drinkers & Housing"
           />
           <Card
             src="/hoop-house.jpg"
@@ -266,7 +267,23 @@ export function Sections() {
       {/* ---------- STORY ---------- */}
       <section id="community" className="px-4 md:px-8 pt-20 md:pt-28">
         <div className="grid md:grid-cols-12 gap-8">
-          <h2 className="reveal label font-body font-normal md:col-span-4">Our Story</h2>
+          <div className="md:col-span-4">
+            <h2 className="reveal label font-body font-normal">Our Story</h2>
+            <figure className="mt-8 md:mt-10">
+              <div className="reveal-img img-frame relative aspect-[4/3]">
+                <Image
+                  src="/graduates.jpg"
+                  alt="Cohort 400 farmers holding their training certificates"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover scale-[1.12]"
+                />
+              </div>
+              <figcaption className="reveal label mt-3 leading-relaxed opacity-70">
+                Cohort 400, certificate day — 24 farmers graduated
+              </figcaption>
+            </figure>
+          </div>
           <div className="md:col-span-7 md:col-start-6">
             <p className="reveal editorial-large text-[24px] md:text-[30px]">
               With roots in Addis markets and Bishoftu farms, our story is
@@ -274,8 +291,9 @@ export function Sections() {
             </p>
             <p className="reveal body-copy mt-6 max-w-[520px] opacity-90">
               We film everything we teach. Daily videos on breeds, layers and
-              chick care grew a backyard coop into classrooms and supply lines
-              serving hundreds of graduates.
+              chick care grew a backyard coop into classrooms, supply lines and
+              a graduating class every month — each farmer leaving with a
+              certificate and a flock of their own.
             </p>
             <div className="reveal grid grid-cols-3 gap-6 mt-10 border-t border-ink/15 pt-6">
               {[
