@@ -208,17 +208,17 @@ export function Sections() {
           </p>
           <div className="grid md:grid-cols-3 gap-10 md:gap-6 mt-8 stagger-group">
             <Card
-              src="/coop-run.jpg"
+              src="/beginner-flock.jpg"
               badge="Cohort 400 · Live"
               caption="Beginner's Foundation — Shelter, Feed & Hygiene"
             />
             <Card
-              src="/layer-barn.jpg"
+              src="/egg-tray.jpg"
               badge="Hands-On · 21 Days"
-              caption="Scale-Up Mastery — Layer House, Yields & Flock Health"
+              caption="Scale-Up Mastery — Egg Yields, Quality & Flock Health"
             />
             <Card
-              src="/chick-flower.jpg"
+              src="/rooster.jpg"
               badge="Cohort 401 · Coming Soon"
               caption="Breeders' Camp — Cross-Breeds & Hatchery Craft"
             />
@@ -246,9 +246,9 @@ export function Sections() {
             caption="Cages & Equipment — Feeders, Drinkers & Housing"
           />
           <Card
-            src="/hoop-house.jpg"
+            src="/egg-basket.jpg"
             badge="Loans + Pricing"
-            caption="Poultry Finance — Costing, Pricing & Startup Loans"
+            caption="Poultry Finance — Egg Pricing, Costing & Startup Loans"
           />
         </div>
         <div className="reveal flex flex-wrap gap-3 mt-10 items-center justify-end">
@@ -322,8 +322,8 @@ export function Sections() {
       <section className="px-0 md:px-8 pt-20 md:pt-28">
         <div className="reveal-img img-frame relative aspect-[4/3] md:aspect-[21/9]">
           <Image
-            src="/cosmos_1968213960.jpg"
-            alt="Chickens feeding in the farm run"
+            src="/free-range-flock.jpg"
+            alt="Free-range flock foraging in the grass"
             fill
             sizes="100vw"
             className="object-cover scale-[1.12]"
